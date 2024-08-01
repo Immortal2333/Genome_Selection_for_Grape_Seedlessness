@@ -34,9 +34,16 @@ This step is to fill the absent value (./.) in your VCF file by using similar va
 ln -s /your/path/to/beagle.21Apr21.304.jar
 java -Xmx50g -jar beagle.21Apr21.304.jar nthreads=10 gt=merge.vcf out=merge.beagle
 ```
+## Extract significant position
+
 
 
 # Code availability and Citation
 All scripts could be found in this repository above. If you have any question, please do not hesitate contact us. Xu Wang: 571720850@qq.com
 
 Wang, Xu, et al. "Integrative genomics reveals the polygenic basis of seedlessness in grapevine" ***Current Biology*** (2024). doi: [https://doi.org/10.1016/j.cub.2024.07.022](https://doi.org/10.1016/j.cub.2024.07.022)
+
+
+
+
+
