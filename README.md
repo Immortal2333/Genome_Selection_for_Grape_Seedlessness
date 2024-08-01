@@ -5,6 +5,35 @@
 
 ![Genome Selection](https://github.com/Immortal2333/Genome_Selection_for_Grape_Seedlessness/blob/main/WorkFlow.png)
 
+## Data preparation
+**Input Data**
+* VCF File
+
+**Dependency**
+The detials of all tools can be available in their **offical website** as followed and most of them can quickly install using [Anaconda](https://anaconda.org/):
+* [Beagle](https://anaconda.org/bioconda/beagle), [bedtools](https://anaconda.org/bioconda/bedtools), [sklearn](https://scikit-learn.org/)
+* [bgzip](https://anaconda.org/bioconda/pbgzip), [bcftools](https://anaconda.org/bioconda/bcftools)
+
+## VCF impute
+Please install [Beagle](https://anaconda.org/bioconda/beagle) and download `beagle.21Apr21.304.jar` for the subsequent analysis.
+
+If you want to predict the seedless phenotype of your own samples, please add your VCF file to our VCF file using `bgzip` and `bcftools`.
+```
+i="your.vcf"
+
+bgzip -c -f -@ 2 $i > $i.gz
+bcftools index -t $i.gz
+bcftools index -t all_miss0.8GQ20maf0.0001.id.vcf.gz
+
+bcftools merge $i.gz all_miss0.8GQ20maf0.0001.id.vcf.gz -O z >  merge.vcf.gz
+
+unzip merge.vcf.gz
+```
+This step is to fill the absent value (./.) in your VCF file by using similar varities. 
+```
+ln -s /your/path/to/beagle.21Apr21.304.jar
+java -Xmx50g -jar beagle.21Apr21.304.jar nthreads=10 gt=merge.vcf out=merge.beagle
+```
 
 
 # Code availability and Citation
