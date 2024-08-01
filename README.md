@@ -1,5 +1,5 @@
 # Genome Selection for Grape Seedlessness
-![Update](https://img.shields.io/badge/Update-31/07/2024-green?logo=github)
+![Update](https://img.shields.io/badge/Update-01/08/2024-green?logo=github)
 ![Author](https://img.shields.io/badge/Author-Xu.Wang-orange)
 ![Email](https://img.shields.io/badge/Email-571720850@qq.com-blue?)
 
