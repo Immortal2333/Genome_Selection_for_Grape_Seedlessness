@@ -3,6 +3,8 @@
 ![Author](https://img.shields.io/badge/Author-Xu.Wang-orange)
 ![Email](https://img.shields.io/badge/Email-571720850@qq.com-blue?)
 
+The home page of "**Polygenic Basis Seedless Grapes**" can be accessed by clicking [here](https://github.com/zhouyflab/Polygenic_Basis_Seedless_Grapes).
+
 ![Genome Selection](https://github.com/Immortal2333/Genome_Selection_for_Grape_Seedlessness/blob/main/WorkFlow.png)
 
 ## Data preparation
